@@ -121,8 +121,8 @@ class Game extends Component {
     );
   }
 }
-
-render(<Game></Game>, document.getElementById('root'));
+window.game = <Game></Game>
+render(window.game, document.getElementById('root'));
 
 function calculateWinner(squares) {
   const lines = [
